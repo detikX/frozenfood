@@ -1,5 +1,11 @@
 .data {
     padding: 0;
+    background: linear-gradient(to top, $colorred, #ade0e2, $colorred);
+    .wrap-detikx {
+        @media screen and (max-width: 768px) {
+            margin-top: -20vh;
+        }
+    }
     .image {
         position: absolute;
         width: 60%;
