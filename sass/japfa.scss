@@ -47,7 +47,7 @@
         width: 100%;
         z-index: 8;
         // padding: 8px;
-        background: #ace6e7;
+        background: linear-gradient(45deg, #ace6e7, white);
         height: auto;
         img {
             width: 100%;
@@ -55,4 +55,24 @@
             object-fit: contain;
         }
     }
+    .coba {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .cek-margin {
+        padding-bottom: 20vh;
+    }
+}
+
+.super {
+    // background: url("../img/coba-02.png");
+    padding: 0;
 }
