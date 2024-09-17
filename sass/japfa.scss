@@ -4,7 +4,7 @@
     }
     .wrap-detikx {
         position: relative;
-        z-index: 8;
+        z-index: 4;
         // p {
         //     color: red;
         // }
@@ -34,6 +34,25 @@
         height: 480px;
         @media screen and (max-width: 8768px) {
             width: 90%;
+        }
+    }
+    .sticky-mode {
+        z-index: 8;
+    }
+    .bawahx {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 8;
+        // padding: 8px;
+        background: #ace6e7;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
     }
 }
