@@ -1,0 +1,87 @@
+.pembukaan {
+    min-height: auto;
+    padding: 0;
+    .teaser {
+        font-family: "Source Code Pro";
+        text-align: center;
+        border-bottom: 1px dashed;
+        margin: 24px 0;
+        p {
+            // color: $secondary;
+            font-size: 1.3rem;
+        }
+    }
+
+    .data-produk {
+        background: $secondary;
+        padding: 16px 0;
+        margin-bottom: 16px;
+        border-top: 2px solid $third;
+        position: relative;
+        color: white;
+        overflow: hidden;
+        .beku {
+            position: absolute;
+            top: -16px;
+            z-index: 1;
+            width: 100%;
+            height: auto;
+            @media screen and (max-width: 768px) {
+                top: -8px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .wraps {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+            z-index: 2;
+            .cekx {
+                display: inline-block;
+                // border-radius: 8px;
+                width: 23%;
+                padding: 4px;
+                // background: $third;
+                background: #3f748d;
+
+                box-shadow: 2px 3px 6px #ececec;
+                margin: 16px 4px;
+                @media screen and (max-width: 768px) {
+                    width: 45%;
+                }
+                h4 {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    .ilustrasi-oke {
+        // display: block;
+        // .gambar {
+        //     width: 42%;
+        //     height: auto;
+        //     float: left;
+        //     // display: inline-block;
+        //     img {
+        //         width: 100%;
+        //         height: 100%;
+        //         object-fit: cover;
+        //     }
+        // }
+    }
+    .text_ {
+        // display: inline-block;
+        // width: 55%;
+        background: $third;
+        padding: 16px;
+        @media screen and (max-width: 768px) {
+            padding: 8px;
+        }
+    }
+}
