@@ -1,0 +1,103 @@
+
+.quotationx {
+	position: relative;
+	width: 600px;
+	margin: auto;
+	padding: 2rem 4rem;
+    // overflow-x: hidden;
+	background-color: transparent;
+
+h2 {
+	margin-block-end: 1rem;
+}
+h4 {
+    font-size: 1rem;
+    font-family: 'Source Code Pro' !important;
+    font-weight: normal;
+    @media screen and (max-width:768px) {
+        position: absolute;
+        right: 16px;
+        bottom: 32px;
+    }
+}
+p, blockquote {
+	margin-block-start: 1rem;
+	text-indent: 2ch;
+    font-family: 'Bitter';
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-left: 24%;
+    @media screen and (max-width:768px) {
+        margin: 1rem 0 10rem;
+        position: relative;
+        text-indent: 3ch;
+        // z-index: 3;
+        // background: linear-gradient(to top, white, transparent);
+    }
+    // font-size: 1.3rem;
+}
+
+    .image {
+        width: 200px;
+        height: auto;
+        overflow-x: hidden;
+        position: absolute;
+        bottom: 0;
+        filter: grayscale(.8);
+        left: 0px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+	background-image: linear-gradient(
+			-45deg,
+			transparent,
+			transparent 2%,
+			white 2%,
+			white 85%,
+			transparent,
+			85%,
+			transparent
+		),
+		linear-gradient(to bottom right, #2ad, #2ad 90%, transparent 90%);
+	background-position: top left, 0.2em 0.2em;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0 0 15px #0005);
+    @media screen and (max-width:768px) {
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+.quotationx::before,
+.quotationx::after {
+	position: absolute;
+	z-index: -1;
+	display: block;
+	width: 3rem;
+	height: 4rem;
+	content: "";
+	z-index: 0;
+	font-size: 8rem;
+	font-family: Georgia, Times, Garamond, serif;
+}
+
+.quotationx::before {
+	top: -3rem;
+	left: 1rem;
+	content: open-quote;
+}
+
+.quotationx::after {
+	bottom: -1rem;
+	right: 1rem;
+	content: close-quote;
+}
+
+.quotationx::before,
+.quotationx::after,
+.quotationx h2 {
+	text-shadow: -2px 2px #fff, -1.5px 1.5px #fff, -1px 1px #fff, -0.5px 0.5px #fff;
+}
