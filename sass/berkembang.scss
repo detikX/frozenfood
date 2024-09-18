@@ -4,9 +4,15 @@
             // font-family: 'Mulish';
         }
     }
+    .hello {
+        background: linear-gradient(to left, #baf5ed, rgba(186,245,237,0.8));
+    }
     .pedagang {
         position: absolute;
-        left: -35%;
+        // left: -35%;
+        // left: 50;
+        top: 50%;
+        transform: translate(0%, -50%);
         width: 470px;
         z-index: -1;
         height: auto;
