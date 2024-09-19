@@ -14,10 +14,10 @@
     .image {
         position: absolute;
         // left: 15%;
-        width: 85;
+        width: 650px;
         height: auto;
         left: 50%;
-        top: 50%;
+        top: 45%;
         transform: translate(-50%, -50%);
         // border-radius: 0 0 32px 32px;
         // border: 4px solid white;
@@ -39,7 +39,7 @@
     .title {
         position: absolute;
         left: 50%;
-        top: 80%;
+        top: 85%;
         transform: translate(-50%, -50%);
         width: 50%;
         text-align: center;
@@ -49,6 +49,8 @@
         }
         h2 {
             font-size: 3rem;
+            filter: drop-shadow(2px 4px 6px #124646);
+            color: white;
             font-weight: bold;
             @media screen and (max-width: 768px) {
                 font-size: 2.2rem;

@@ -1,5 +1,5 @@
 .japfa {
-    @import 'thermometer';
+    @import "thermometer";
     .img {
         margin: 0 auto 16px;
     }
@@ -9,6 +9,31 @@
         // p {
         //     color: red;
         // }
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(-360deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .ice {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 50%;
+        top: 16%;
+        animation-name: rotate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 
     .infog {
@@ -53,13 +78,13 @@
         // right: 0;
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         width: 520px;
         // z-index: 8;
         // padding: 8px;
         // background: linear-gradient(45deg, #ace6e7, white);
         height: auto;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             width: 100%;
         }
         img {
