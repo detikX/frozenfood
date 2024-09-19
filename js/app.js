@@ -13,9 +13,9 @@ Highcharts.chart('container', {
     title: {
         text: 'Memandang Produk Beku Higienis',
         style: {
-            // color: "#fafafa",
+            color: "#124646",
             // font: ' sans-serif'
-            font: 'bold 24px "Mulish", sans-serif',
+            font: 'bold 24px "Outfit", sans-serif',
         }
     },
     credits: {
