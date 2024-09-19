@@ -10,6 +10,12 @@ $(document).ready(function () {
     AOS.init()
 })
 
+$(".container_mouse").click(function () {
+    $('html, body').animate({
+        scrollTop: $(".pembukaan").offset().top - 82
+    }, 1000);
+})
+
 $("section p").attr({ "data-aos": "fade-in", "data-aos-delay": "200", "data-aos-duration": "300", "data-aos-offset": "10" });
 
 
