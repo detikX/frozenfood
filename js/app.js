@@ -1,3 +1,10 @@
+$(document).ready(function () {
+    AOS.init()
+})
+
+$("section p").attr({ "data-aos": "fade-in", "data-aos-delay": "200", "data-aos-duration": "300", "data-aos-offset": "10" });
+
+
 // const colors = Highcharts.getOptions().colors.map((c, i) =>
 //     // Start out with a darkened base color (negative brighten), and end
 //     // up with a much brighter color
