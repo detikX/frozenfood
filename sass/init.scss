@@ -273,6 +273,7 @@ html,
 body {
     position: relative;
     height: 100%;
+    background: $colorred;
     // font-family: 'Outfit';
     // overflow-x: hidden;
     // p {
@@ -366,7 +367,7 @@ section {
 }
 
 #nav.dark {
-    background: linear-gradient(45deg, #044258, #10607d) !important;
+    background: linear-gradient(-45deg, #33a4b9, #3f748d) !important;
 }
 
 .footer {
@@ -395,7 +396,7 @@ section {
     }
 }
 .bg-blues {
-    background: #1c7b9d !important;
+    background: $colorred !important;
     position: relative;
     z-index: 12;
 }
@@ -448,6 +449,7 @@ section {
                 h2 {
                     font-family: "Mulish" !important;
                     font-size: 1.2rem;
+                    color: white !important;
                 }
             }
         }
